@@ -1,76 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Privacy Policy — Findlings</title>
-<style>
-body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; max-width: 720px; margin: 2rem auto; padding: 0 1rem; color: #1a1a1a; line-height: 1.6; }
-h1 { font-size: 1.75rem; margin-top: 0; }
-h2 { font-size: 1.25rem; margin-top: 2rem; }
-.effective { color: #666; font-size: 0.9rem; }
-.draft-banner { background: #fff4e5; border-left: 4px solid #f59e0b; padding: 1rem; margin: 1.5rem 0; border-radius: 4px; }
-code { background: #f5f5f5; padding: 2px 4px; border-radius: 3px; font-size: 0.9em; }
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Findlings — Privacy Policy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Nunito:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root { --cream:#FBF7EF; --raised:#FFFDF8; --fern:#347A4C; --fern-dark:#234A28; --ink:#2E2B27; --muted:#6B665F; --amber:#E2A33C; --line:#EBE5D9; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--cream); color:var(--ink);
+      font-family:"Nunito",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; line-height:1.6; }
+    .wrap { max-width:680px; margin:0 auto; padding:48px 24px 80px; }
+    .brand { display:flex; align-items:center; gap:12px; margin-bottom:8px; }
+    .leaf { width:44px; height:44px; border-radius:50%; background:var(--fern);
+      display:flex; align-items:center; justify-content:center; font-size:24px; }
+    h1, h2 { font-family:"Fraunces",Georgia,serif; color:var(--fern-dark); font-weight:600; line-height:1.15; }
+    h1 { font-size:40px; margin:24px 0 4px; }
+    .updated { color:var(--muted); font-size:15px; margin:0 0 32px; }
+    .sub { color:var(--muted); font-size:18px; margin:0 0 8px; }
+    h2 { font-size:23px; margin:38px 0 10px; }
+    p { margin:0 0 14px; }
+    ul { margin:0 0 14px; padding-left:22px; }
+    li { margin:6px 0; }
+    .card { background:var(--raised); border:1px solid var(--line); border-radius:20px; padding:22px 26px; margin:18px 0 24px; }
+    .card p:last-child { margin-bottom:0; }
+    a { color:var(--fern); font-weight:600; text-decoration:none; }
+    a:hover { text-decoration:underline; }
+    footer { margin-top:56px; padding-top:24px; border-top:1px solid var(--line); color:var(--muted); font-size:14px; }
+    footer a { color:var(--muted); }
+  </style>
 </head>
 <body>
-<h1>Privacy Policy</h1>
-<p class="effective"><strong>Effective date:</strong> TODO — set to your launch date</p>
+  <div class="wrap">
+    <div class="brand">
+      <div class="leaf">🌿</div>
+      <strong style="font-family:'Fraunces',Georgia,serif; font-size:22px; color:var(--fern-dark);">Findlings</strong>
+    </div>
 
-<div class="draft-banner">
-<strong>⚠️ DRAFT</strong> — This is a starter template reflecting what the Findlings iOS app currently does. Review with a legal advisor before production launch. Placeholders marked <code>TODO</code> must be replaced with your actual details.
-</div>
+    <h1>Privacy Policy</h1>
+    <p class="updated">Last updated: June 24, 2026</p>
 
-<p>Findlings ("we", "our", or "us") is a nature-discovery iOS app that helps you identify plants, track your discoveries, and optionally share observations with the community. This Privacy Policy describes how we collect, use, and share information when you use the app.</p>
+    <p>Findlings is built privacy-first. There's no account to create, no advertising, and no
+    analytics or tracking of any kind. This policy explains the little data the app does handle
+    and where it goes.</p>
 
-<h2>Information we collect</h2>
-<ul>
-  <li><strong>Account information</strong>: If you sign in with Apple or Google, we receive your name (if you choose to share it) and an email address associated with your account. Sign-in is optional — the app works offline without signing in.</li>
-  <li><strong>Photos</strong>: When you use the Scan feature, your photo is sent to Pl@ntNet (see "Third-party services") for plant identification. Photos of saved discoveries are stored in your account on our backend (Supabase).</li>
-  <li><strong>Location</strong>: If you grant location permission, we attach an approximate GPS coordinate to each discovery so we can show it on your personal map and compute nearby-discovery distances. You can disable location precision in the app's Privacy settings.</li>
-  <li><strong>Discovery data</strong>: Species name, date, and any notes or journal entries you attach to a discovery.</li>
-  <li><strong>Device & diagnostic data</strong>: Standard iOS crash logs and non-personal usage counters (e.g. number of identifications per day for Pro-tier metering).</li>
-</ul>
+    <div class="card">
+      <p><strong>The short version:</strong> Your photos, finds, notes, and the locations you
+      attach to them live in <strong>your own iCloud</strong> — we never see them and have no
+      server that stores them. When you identify a plant, only the photo (with no location
+      attached) is sent to a botanical identification service to recognize it. We don't track
+      you, show ads, or sell anything to anyone.</p>
+    </div>
 
-<h2>How we use your information</h2>
-<ul>
-  <li>To provide the core plant-identification, collection, and community features.</li>
-  <li>To sync your discoveries across your devices.</li>
-  <li>To enable opt-in features like Citizen Science contributions and public sharing on the community feed.</li>
-  <li>To send notifications you've enabled (streak reminders, new comments, etc.).</li>
-  <li>To enforce fair-use limits (e.g. daily identification quotas for free-tier users).</li>
-</ul>
+    <h2>What the app handles, and why</h2>
+    <ul>
+      <li><strong>Photos you identify.</strong> When you scan or choose a plant photo, that
+      image is sent to the <strong>Pl@ntNet</strong> identification service to return a species
+      match. The photo is re-encoded before sending, which removes any embedded location (GPS)
+      and camera metadata. We don't receive or store these photos ourselves.</li>
+      <li><strong>Your collection.</strong> Your discoveries, photos, journal entries, moods,
+      and progress are stored in <strong>your private iCloud account</strong> (Apple CloudKit)
+      and sync across your own devices. This data is controlled by you through Apple; Findlings
+      has no backend server and no copy of it.</li>
+      <li><strong>Location.</strong> If you allow it, the app records where you made a discovery
+      so it can show your finds on a map. This location is stored only in your own iCloud — it is
+      <strong>never sent to us and never sent with the photo to the identification service.</strong>
+      You can decline location access and the app still works.</li>
+      <li><strong>Purchases.</strong> Findlings Pro is sold through Apple's In-App Purchase.
+      Apple processes payment; we never see your payment details.</li>
+    </ul>
 
-<h2>Third-party services</h2>
-<ul>
-  <li><strong>Pl@ntNet</strong> (<a href="https://plantnet.org">plantnet.org</a>) — photos submitted for identification are sent to Pl@ntNet's API. See their privacy policy at <a href="https://plantnet.org/privacy">plantnet.org/privacy</a>.</li>
-  <li><strong>Supabase</strong> (<a href="https://supabase.com">supabase.com</a>) — hosts our backend, including auth, database, and photo storage.</li>
-  <li><strong>Apple Sign in with Apple</strong> and <strong>Google Sign-In</strong> for optional authentication.</li>
-  <li><strong>Wikipedia</strong> — species info pages are fetched from Wikipedia's public API; no personal data is sent.</li>
-  <li><strong>Apple Push Notification Service (APNs)</strong> — delivers push notifications.</li>
-</ul>
+    <h2>What we don't do</h2>
+    <ul>
+      <li>No user accounts, logins, emails, or passwords collected.</li>
+      <li>No advertising and no ad networks.</li>
+      <li>No analytics, crash-reporting, or tracking SDKs, and no "Data Used to Track You."</li>
+      <li>No selling, renting, or sharing of personal data — there's nothing collected to sell.</li>
+    </ul>
 
-<h2>Sharing and visibility</h2>
-<p>Your discoveries are private by default. They appear only on your devices and your signed-in backend account. You can opt in to:</p>
-<ul>
-  <li><strong>Community feed sharing</strong>: post a discovery publicly in the community feed.</li>
-  <li><strong>Citizen Science</strong>: share anonymized observation data (habitat, growth stage, location grid, species) with research partners for biodiversity research.</li>
-</ul>
-<p>You can disable these at any time in the app's Privacy settings.</p>
+    <h2>Third-party services</h2>
+    <p>Two services are involved in the app's core functions:</p>
+    <ul>
+      <li><strong>Pl@ntNet</strong> — receives a plant photo to identify it. See
+      <a href="https://plantnet.org/en/legal-notices/">Pl@ntNet's terms and privacy information</a>.</li>
+      <li><strong>Apple iCloud &amp; In-App Purchase</strong> — stores your collection privately
+      and processes subscriptions. See
+      <a href="https://www.apple.com/legal/privacy/">Apple's Privacy Policy</a>.</li>
+    </ul>
 
-<h2>Data retention and deletion</h2>
-<p>You can delete individual discoveries at any time. To delete your entire account and associated data, use <strong>Profile → Delete Account</strong> in the app, or email us (see Contact below). Account deletion removes all your personal data from our backend within 30 days.</p>
+    <h2>Children's privacy</h2>
+    <p>Findlings is rated 4+ and is suitable for all ages, but it is not directed at children
+    under 13, and we do not knowingly collect personal information from children.</p>
 
-<h2>Children's privacy</h2>
-<p>Findlings is not directed to children under 13. If you believe a child has submitted data, please contact us.</p>
+    <h2>Your control and deletion</h2>
+    <p>Because your data lives in your own iCloud, you're in control: delete any find inside the
+    app, or remove the app's data through <strong>Settings → [your name] → iCloud → Manage
+    Account Storage</strong> on your device. Deleting the app removes its local data.</p>
 
-<h2>Your rights</h2>
-<p>You can access, export, or delete your data at any time via the app's Profile menu. For questions about your data, contact us at the email below.</p>
+    <h2>Changes to this policy</h2>
+    <p>If this policy changes, we'll update the date above and post the new version here. Material
+    changes will be reflected in an app update where appropriate.</p>
 
-<h2>Changes to this policy</h2>
-<p>We may update this policy from time to time. The "Effective date" above reflects the current version. Material changes will be announced in the app.</p>
+    <h2>Contact</h2>
+    <p>Questions about privacy? Email
+    <a href="mailto:ryandeveloperscience@gmail.com?subject=Findlings%20Privacy">ryandeveloperscience@gmail.com</a>
+    and we'll help.</p>
 
-<h2>Contact</h2>
-<p>Questions about privacy? Email us at <a href="mailto:ryandeveloperscience@gmail.com">ryandeveloperscience@gmail.com</a>.</p>
+    <footer>
+      Findlings · <a href="support.html">Support</a> · <a href="terms.html">Terms of Use</a><br>
+      Questions? <a href="mailto:ryandeveloperscience@gmail.com">ryandeveloperscience@gmail.com</a>
+    </footer>
+  </div>
 </body>
 </html>
